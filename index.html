@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home - The Shoe Closet</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover, nav a.active {
+            background-color: #555;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product {
+            width: 200px;
+            margin: 15px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.2s;
+            background-color: #fff;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+        .product h3 {
+            margin: 10px 0;
+        }
+    </style>
 </head>
-
 <body>
-    <p>Hello World</p>
+    <nav>
+        <div class="logo"><img src="comsats.jpg" alt="Logo" width="40" height="40"> The Shoe Closet</div>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+    </nav>
+    <div class="container">
+        <h1>Welcome to The Shoe Closet</h1>
+        <div class="products">
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Sneakers</h3>
+                <p>PKR 1999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Running Shoes</h3>
+                <p>PKR 2999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Formal Shoes</h3>
+                <p>PKR 3999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Boots</h3>
+                <p>PKR 4999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Sandals</h3>
+                <p>PKR 5999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>High Heels</h3>
+                <p>PKR 6999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Casual Shoes</h3>
+                <p>PKR 7999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Flip Flops</h3>
+                <p>PKR 8999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Loafers</h3>
+                <p>PKR 9999</p>
+            </div>
+            <div class="product">
+                <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMzAzMTV8MHwxfGFsbHwxfHx8fHx8fHwxNjIwNTA0MjEw&ixlib=rb-1.2.1&q=80&w=400" alt="Loafers">
+                <h3>Sports Shoes</h3>
+                <p>PKR 10999</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('nav a').forEach(link => link.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
 </body>
-
 </html>
